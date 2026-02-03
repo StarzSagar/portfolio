@@ -1,0 +1,113 @@
+:root {
+  --bg: #0a0f1c;
+  --text: white;
+  --accent: cyan;
+}
+
+.light {
+  --bg: #ffffff;
+  --text: #111;
+  --accent: #0077ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a, nav button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.grid div, .project {
+  background: #111;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
