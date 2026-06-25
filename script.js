@@ -26,3 +26,24 @@ card.style.transition=".8s";
 observer.observe(card);
 
 });
+
+
+
+const mirrorBtn = document.getElementById("mirrorBtn");
+const popup = document.getElementById("mirrorPopup");
+
+mirrorBtn.addEventListener("click", () => {
+    popup.classList.toggle("show");
+});
+
+document.addEventListener("click",(e)=>{
+
+    if(
+        !popup.contains(e.target)
+        &&
+        e.target!==mirrorBtn
+    ){
+        popup.classList.remove("show");
+    }
+
+});
